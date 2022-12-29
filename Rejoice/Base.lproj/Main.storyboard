@@ -30,7 +30,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="dNJ-i2-Yj0">
-                                <rect key="frame" x="37" y="243" width="320" height="216"/>
+                                <rect key="frame" x="36.666666666666657" y="242.66666666666663" width="320" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hzz-5H-tmB"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have been enjoying life for ... days" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-jx-VU6">
                                 <rect key="frame" x="91.333333333333329" y="534.66666666666663" width="210.33333333333337" height="40.666666666666629"/>
@@ -49,6 +52,9 @@
                                 <state key="normal" title="Result">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resultButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="npB-5I-twv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +74,10 @@
                             <constraint firstItem="czY-9k-pOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wql-nG-2QH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultButton" destination="dil-95-NXf" id="SNY-VU-1O6"/>
+                        <outlet property="resultTextLabel" destination="3e0-jx-VU6" id="wGD-HI-dn9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
