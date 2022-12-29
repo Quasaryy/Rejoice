@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         }
         let days = range.formatted(.components(style: .wide, fields: [.day]))
         resultTextLabel.isHidden = false
-        resultTextLabel.text = "You have been enjoying life for \(days) days"
+        resultTextLabel.text = "You have been enjoying life for \(days)"
     }
     
 }
